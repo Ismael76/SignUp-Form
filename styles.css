@@ -1,0 +1,219 @@
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-db: hsl(249, 10%, 26%);
+  --neutral-gb: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-color: var(--primary-red);
+  color: white;
+}
+
+.signup-section {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.signup-section > p {
+  font-size: 1.4rem;
+  margin-bottom: 5rem;
+}
+
+/* Price Block */
+.pricing {
+  background-color: var(--accent-blue);
+  height: 80px;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 0 0 hsl(0, 77%, 62%);
+}
+
+.pricing p {
+  width: 20ch;
+  margin: auto;
+  font-size: 1.4rem;
+}
+
+/* Sign Up Form */
+
+.signup-form {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  text-align: start;
+  padding: 1rem 3rem;
+  color: gray;
+  box-shadow: 0 5px 0 0 hsl(0, 77%, 62%);
+}
+
+/* Input */
+
+.signup-form input {
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 1.5rem;
+  border: 0.5px solid lightgray;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+}
+
+/* Error Icons */
+
+.fname-container {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.lname-container {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.email-container {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.password-container {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.fname-container,
+.lname-container,
+.email-container,
+.password-container {
+  margin: 2.5rem 0;
+}
+
+.error-icon {
+  top: 45%;
+  left: 85%;
+  opacity: 0;
+}
+
+.fname-error-icon {
+  top: 30%;
+  position: absolute;
+}
+
+.lname-error-icon {
+  position: absolute;
+}
+
+.email-error-icon {
+  position: absolute;
+}
+
+.password-error-icon {
+  position: absolute;
+}
+
+/* Labels */
+
+.label-val {
+  float: right;
+  font-size: 1.2rem;
+  color: red;
+  font-style: italic;
+}
+
+/* Button */
+
+.signup-btn {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  box-shadow: 0 5px 0 0 hsl(154, 62%, 47%);
+}
+
+.signup-btn:hover {
+  background-color: hsl(154, 66%, 64%);
+}
+
+.signup-form p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .signup-form {
+    padding: 5rem;
+  }
+
+  .fname-container,
+  .lname-container,
+  .email-container,
+  .password-container {
+    margin: 4rem 0;
+  }
+
+  .error-icon {
+    left: 95%;
+    top: 30%;
+  }
+
+  .label-val {
+    margin-top: 1rem;
+  }
+
+  .col1 {
+    justify-self: center;
+    align-self: center;
+    padding: 4rem;
+  }
+
+  .col2 {
+    padding: 4rem;
+  }
+
+  body {
+    font-size: 1.8rem;
+    padding: 5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .pricing {
+    width: 100%;
+  }
+}
