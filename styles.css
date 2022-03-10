@@ -206,6 +206,7 @@ body {
   body {
     font-size: 1.8rem;
     padding: 5rem;
+    background-repeat: repeat;
   }
 
   h1 {
