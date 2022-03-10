@@ -65,7 +65,10 @@ submit.addEventListener('click', e => {
         clear(labelPassword, passwordField, passwordErrorIcon);
     }
 
-
+    if (e.returnValue == true) {
+        console.log("Im Here!");
+        alert("Registered!");
+    }
 
 });
 
