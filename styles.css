@@ -104,17 +104,16 @@ body {
 .lname-container,
 .email-container,
 .password-container {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
 }
 
 .error-icon {
-  top: 45%;
-  left: 85%;
+  top: 30%;
+  left: 88%;
   opacity: 0;
 }
 
 .fname-error-icon {
-  top: 30%;
   position: absolute;
 }
 
@@ -165,7 +164,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .grid {
     display: grid;
   }
